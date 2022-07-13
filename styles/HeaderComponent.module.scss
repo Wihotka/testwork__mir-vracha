@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+
+  &__heading {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  @media (max-width: 1024px) {
+    &__heading {
+      font-size: 36px;
+      line-height: 44px;
+    }
+  }
+  @media (max-width: 750px) {
+    &__heading {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+  @media (max-width: 480px) {
+    &__heading {
+      font-size: 26px;
+      line-height: 36px;
+    }
+  }
+}
+
+.visuallyHidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
